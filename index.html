@@ -9,7 +9,8 @@
 
     p.draw = () => {
       p.fill(120, 242, 173)
-      p.quad(p.mouseX + 10, p.mouseY + 10, p.mouseX - 10, p.mouseY - 10, p.mouseX + 10, p.mouseY - 10, p.mouseX - 10, p.mouseY + 10, )
+      //I know that the order of the quad isn't correct but I like the shape of it
+      p.quad(p.mouseX + 10, p.mouseY + 10, p.mouseX - 10, p.mouseY - 10, p.mouseX + 10, p.mouseY - 10, p.mouseX - 10, p.mouseY + 10)
     }
   }
   new p5(sketch)
