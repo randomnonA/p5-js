@@ -3,13 +3,13 @@
   /* global p5 */
   const sketch = (p) => {
     p.setup = () => {
-      p.createCanvas(600, 600)
-      p.background(154, 117, 240)
+      p.createCanvas(900, 900)
+      p.background(259, 177, 140)
     }
 
     p.draw = () => {
-      p.fill(20, 242, 224)
-      p.ellipse(p.mouseX, p.mouseY, 50, 50)
+      p.fill(120, 242, 173)
+      p.quad(p.mouseX + 10, p.mouseY + 10, p.mouseX - 10, p.mouseY - 10, p.mouseX + 10, p.mouseY - 10, p.mouseX - 10, p.mouseY + 10, )
     }
   }
   new p5(sketch)
